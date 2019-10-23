@@ -6,12 +6,13 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>
 		mgr inż. Łukasz Gaża
-		<a href="about.html">O mnie</a>
-		<a href="teaching.html">Dydaktyka</a>
-		</header>
-		Najbliższe zajęcia (16/10/2019):<br><br>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">O mnie</a>
+			<a href="teaching.html">Dydaktyka</a>
+		</nav>
+		Najbliższe zajęcia (18:00-20:00 23/10/2019):<br><br>
 		Kartkówka:
 		<ul>
 			<li>tworzenie klas w Javie, atrybuty i metody klasy</li>
@@ -21,8 +22,10 @@
 		<br><br><br>
 		Terminy oddawania zadań ze wzorców projektowych
 		<ul>
-			<li>Fabryka abstrakcyjna - 23/10/2019</li>
-			<li>Metoda wytwórcza - 23/10/2019
+			<li>Fabryka abstrakcyjna - 30/10/2019</li>
+			<li>Metoda wytwórcza - 30/10/2019</li>
+			<li>Singleton - 20/11/2019</li>
+			<li>Budowniczy - 20/11/2019</li>
 		</ul>
 
 		<br><br><br>
@@ -30,12 +33,24 @@
 
 		<br><br><br>
 		Zasady oddawania zadań
+		<ol>
+			<li>kolejne zadania powinny być oddawane w powyższych terminach, opóźnienie o każdy tydzień powoduje obniżenie oceny o jeden stopień</li>
+			<li>praca wykonywana przez cały semestr powinna być częścią jednego projektu na github</li>
+			<li>każdy wzorzec projektowy powinien być zaimplementowany w osobnym branchu (nie dotyczy to Fabryki abstrakcyjnej, Metody wytwórczej, Singletona i Budowniczego, te wzorce mogą być częścią jednego brancha)</li>
+			<li>implementacja zadania powinna się składać z implementacji wzorca oraz z implementacji testów tego wzorca, korzystając z biblioteki JUnit</li>
+			<li>oddawanie danego wzorca polega na stworzeniu pull request'a z brancha z kodem do brancha master i zaproszeniu Prowadzącego do wykonania review kodu (korzystając z mechanizmów github)</li>
+		</ol>
 
 		<br><br><br>
 		Tworzenie projektu w:
 		<ul>
 			<li>IntelliJ IDEA</li>
 			<li>NetBeans</li>
+			<ul>
+				<li>w celu stworzenia projektu można skorzystać z <a href="netbeans-sample-project.zip">tego szablonu (stworzonego dla Apache NetBeans 11.1)</a></li>
+				<li>kolejne wzorce projektowe powinny być zaimplementowane jako klasy w oddzielnych pakietach</li>
+				<li>żeby wygenerować test dla klasy można kliknąć na jej nazwę prawym przyciskiem, a następnie wybrać Tools->Create/Update Tests</li>
+			</ul>
 		</ul>
 	</body>
 </html>
