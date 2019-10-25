@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 	<meta charset="UTF-8">
-	<title>My home page</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
+	<head>
+ 		<meta charset="UTF-8">
+		<title>My home page</title>
+
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
 	<body>
 		mgr inż. Łukasz Gaża
-		<nav>
-		<a href="index.html">Home</a>
-		<a href="about.html">O mnie</a>
-		<a href="teaching.html">Dydaktyka</a>
+		<nav class="nav nav-pills nav-justified">
+  			<a class="nav-item nav-link active" href="index.html">Home</a>
+  			<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dydaktyka</a>
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item" href="software-engineering.html">Inżynieria oprogramowania</a>
+      			<a class="dropdown-item" href="object-oriented-programming.html">Technologie obiektowe</a>
+    		</div>
+  			<a class="nav-item nav-link" href="about.html">O mnie</a>
 		</nav>
+
 		<main>Content</main>
 		<footer>Find me: lukasz.gaza (at) pk.edu.pl</footer>
 	</body>
